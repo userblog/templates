@@ -1,0 +1,121 @@
+body {
+	background-color: rgb(250, 250, 250);
+	font-family: 'Raleway', sans-serif;
+	}
+a {
+	text-decoration: none;
+	
+	}
+a:link, a:visited {
+	color: #00cc99;
+	}
+input, button {
+	border-radius: 1px;
+	outline: none;
+	}
+input[type='text'] {
+	padding-left: 1em;
+	}
+
+header {
+	display: block;
+	height: 3em;
+	
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	background: #000000;
+	}
+
+.nav-link {
+	display: inline-block;
+	padding-left: 15px;
+	padding-top: .85em;
+	}
+.nav-link-search {
+	display: inline-block;
+	padding-right: 15px;
+	margin-left: 15px;
+	}
+.search-pole {
+	border: 1px solid #333333;
+	height: 1.5em;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	font-family: 'Raleway', sans-serif;
+	}
+.search-pole:enabled {
+	background: rgba(51,51,51,0.9);
+	}
+.search-pole:focus {
+	background: rgba(255,255,255,1);
+	}
+
+input[type='checkbox'] {
+	display: none;
+	}
+	
+.header label.toogleMenu {
+	display: none;
+	background: black;
+	height: 2.5em;
+	padding-left: 15px;
+	padding-top: 1.25em;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #00cc99;
+	}
+
+
+@media screen and (max-width: 720px){
+    .nav-link {
+		display: block;
+		height: 2.5em;
+		padding-left: 15px;
+	    padding-top: 1.25em;
+		border: 1px solid black;
+		background-color: black;
+		}
+	.nav-link-search {
+		display: block;
+		height: 2.5em;
+		margin-left: 0;
+		margin-right: 0;
+		border: 1px solid black;
+		background-color: black;
+		}
+	.search-pole {
+		border: 1px solid #333333;
+		height: 2.5em;
+		width: 100%;
+		box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+		font-family: 'Raleway', sans-serif;
+		}
+	
+		
+	.header nav {
+		/*display: none;*/
+		transition: 0.4s;
+		transform-origin: top center;
+		transform: scaleY(0);
+		opacity: 0;
+		}
+	
+	.header label.toogleMenu {
+		display: block;
+		}
+	.header input.toogleMenu:checked + label.toogleMenu {
+		background: black;
+		color: #00cc99;
+		}
+    .header input.toogleMenu:checked ~ nav {
+    	/*display: block;*/
+        transform: scaleY(1);
+		opacity: 1;
+    }
+}
+	
+	
+	
+	
+	
+	
+	
