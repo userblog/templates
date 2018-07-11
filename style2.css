@@ -79,7 +79,7 @@ input[type='checkbox'] {
 .main {
 	text-align: center;
     /*width: 960px;*/
-    margin-top: 3em;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto
 	}
@@ -161,6 +161,10 @@ input[type='checkbox'] {
 	border-radius: 2em;
 	margin: auto;
 	line-height: 2.25em;
+	corsor: pointer;
+	}
+.social-btn__link:link, .social-btn__link:visited {
+    color: black;
 	}
 .git {
 	background: #cccccc;
